@@ -1,0 +1,14 @@
+sudo: false
+language: ruby
+cache: bundler
+services:
+  - postgresql
+before_install:
+  - gem install bundler
+  - gem install rubocop
+rvm:
+  - 2.5.1
+script:
+  - bundle exec rails db:setup
+  - bundle exec rspec
+  - bundle exec rubocop
