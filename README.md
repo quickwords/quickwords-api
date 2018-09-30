@@ -14,7 +14,7 @@
     ```
     bundle
     ```
-* import **master.key** and **.env.local** to the root directory of the project
+* import **master.key** to /config and **.env.local** to the root directory of the project
 
 * create database user
   ```
@@ -29,4 +29,4 @@
   rails db:setup
   ```
 
-    ***For missing credentails and files ask @gtluszcz**
+    ***For missing credentials and files ask @gtluszcz**
