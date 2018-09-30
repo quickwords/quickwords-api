@@ -5,10 +5,11 @@ services:
   - postgresql
 before_install:
   - gem install bundler
+  - gem install rubocop
 rvm:
   - 2.5.1
 script:
   - bundle
-  - bundle exec rails db:setup
-  - bundle exec rspec
+  - rails db:setup
+  - rspec
   - rubocop
