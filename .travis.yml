@@ -9,7 +9,6 @@ before_install:
 rvm:
   - 2.5.1
 script:
-  - bundle
-  - rails db:setup
-  - rspec
-  - rubocop
+  - bundle exec rails db:setup
+  - bundle exec rspec
+  - bundle exec rubocop
