@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Steps to set up project
+* Ruby version 2.5.1p57 
 
-Things you may want to cover:
+* clone repo
+   ```
+   git clone https://github.com/quickwords/quickwords-api.git
+   cd quickwords-api
+   ```
 
-* Ruby version
 
-* System dependencies
+* install dependecies
+    ```
+    bundle
+    ```
+* import **master.key** and **.env.local** to the root directory of the project
 
-* Configuration
-
-* Database creation
+* create database user
+  ```
+  psql
+  CREATE USER quickwords WITH CREATEDB PASSWORD '<<our_password>>';
+  
+  ```
+  
 
 * Database initialization
+  ```
+  rails db:setup
+  ```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    ***For missing credentails and files ask @gtluszcz**
